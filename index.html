@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dual-Language AI Text Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .text-box {
+            display: flex;
+            justify-content: space-between;
+        }
+        .text-area {
+            width: 48%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fff;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Generated Dual-Language Text</h1>
+        <div class="text-box">
+            <textarea id="frenchText" class="text-area" placeholder="French text will appear here..." readonly></textarea>
+            <textarea id="englishText" class="text-area" placeholder="English translation will appear here..." readonly></textarea>
+        </div>
+        <button onclick="generateText()">Generate Text</button>
+    </div>
+
+    <script>
+        function generateText() {
+            // Placeholder for now - we will later replace with AI-generated text
+            document.getElementById('frenchText').value = "Ceci est un exemple de texte en français.";
+            document.getElementById('englishText').value = "This is a sample text in English.";
+        }
+    </script>
+</body>
+</html>
